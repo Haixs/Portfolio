@@ -1,0 +1,145 @@
+/* Reset de márgenes y padding para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body {
+    font-family: Arial, Helvetica, sans-serif; /* Arial o, si no está disponible, Helvetica o cualquier fuente sans-serif */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    
+    
+}
+
+/* Estilo para el contenedor de la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y los links a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 10px 20px;
+    background-color: #333; /* Color de fondo para la barra de navegación */
+}
+
+/* Estilo para el logo */
+#logo {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilo para la lista de navegación */
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa Flexbox para alinear los links horizontalmente */
+}
+
+ul li {
+    margin-left: 20px; /* Espacio entre cada link */
+}
+
+ul li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: #ff6347; /* Cambia el color del enlace al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+footer {
+    display: flex;
+    justify-content: space-between; /* Alinea el texto a la izquierda y los enlaces a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilo para el texto de derechos de autor */
+footer p {
+    margin: 0;
+}
+
+/* Estilo para la lista de enlaces */
+footer ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa Flexbox para alinear los enlaces horizontalmente */
+}
+
+footer ul li {
+    margin-left: 15px; /* Espacio entre los enlaces */
+}
+
+footer ul li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #ff6347; /* Cambia el color del enlace al pasar el mouse */
+}
+
+
+/* Estilo para el artículo */
+article {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; /* Fondo negro con un toque distinto al footer y nav */
+}
+
+/* Contenedor principal */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Ancho de la sección */
+    max-width: 1200px; /* Ancho máximo */
+}
+
+/* Imagen a la izquierda */
+.hero__photo__1 {
+    width:420px;
+    height:680px;
+    object-fit: cover;
+}
+
+/* Contenido de texto a la derecha */
+.texto {
+    width: 55%;
+    color: white;
+    text-align: center;
+}
+
+.texto h1 {
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+.container__proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+.proyectos{
+    min-height: 200px;
+    min-width: 300px;
+    padding: 15px;
+    border: 3px solid rebeccapurple;
+    border-radius: 0.5em;
+    border-top-right-radius: 20% 30%;
+
+}
+#proyecto__papel{
+    color:gray;
+}
