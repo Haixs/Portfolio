@@ -21,7 +21,27 @@ nav {
 
 /* Estilo para el logo */
 #logo {
-    height: 50px; /* Ajusta el tamaño del logo */
+    display: inline-block; /* Hace que el enlace tenga dimensiones */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #fff; /* Color del texto */
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5)); /* Sombra difuminada */
+}
+
+#logo h1 {
+    margin: 0;
+    padding: 10px; /* Ajusta el área clickeable */
+    transition: transform 0.4s ease-in-out; /* Suaviza la animación */
+    transform-origin: left; /* Hace que la animación de escala crezca desde la izquierda */
+}
+
+/* Efecto al pasar el cursor */
+#logo:hover h1 {
+    transform: scaleX(1.1); /* Expande solo en el eje X (hacia la derecha) */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Aumenta el difuminado */
 }
 
 /* Estilo para la lista de navegación */
@@ -131,10 +151,28 @@ article {
 
 /* Imagen a la izquierda */
 .hero__photo__1 {
-    width:420px;
-    height:680px;
+    width: 400px;
+    height: 600px;
     object-fit: cover;
+    border-radius: 15px; /* Bordes redondeados suaves */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra en la parte inferior y derecha */
+    animation: spin-horizontal 1s ease-out 0.3s forwards;
+    transform-style: preserve-3d;
 }
+
+/* Animación de giro horizontal */
+@keyframes spin-horizontal {
+    from {
+        transform: rotateY(0deg) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+
 
 /* Contenido de texto a la derecha */
 .texto {
