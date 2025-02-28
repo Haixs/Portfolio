@@ -3,67 +3,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}body {
-    font-family: Arial, Helvetica, sans-serif; /* Arial o, si no está disponible, Helvetica o cualquier fuente sans-serif */
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
-    
-    
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Arial o, si no está disponible, Helvetica o cualquier fuente sans-serif */
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+
+
+}
+
+
 
 /* Estilo para el contenedor de la barra de navegación */
 nav {
     display: flex;
-    justify-content: space-between; /* Distribuye el logo a la izquierda y los links a la derecha */
-    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between;
+    /* Distribuye el logo a la izquierda y los links a la derecha */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
     padding: 10px 20px;
-    background-color: #333; /* Color de fondo para la barra de navegación */
+    background-color: #333;
+    /* Color de fondo para la barra de navegación */
 }
 
 /* Estilo para el logo */
 #logo {
-    display: inline-block; /* Hace que el enlace tenga dimensiones */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color: #fff; /* Color del texto */
-    font-size: 1rem; /* Tamaño del texto */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 3px; /* Espaciado entre letras */
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5)); /* Sombra difuminada */
+    display: inline-block;
+    /* Hace que el enlace tenga dimensiones */
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    color: #fff;
+    /* Color del texto */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Texto en negrita */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    letter-spacing: 3px;
+    /* Espaciado entre letras */
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+    /* Sombra difuminada */
 }
 
 #logo h1 {
     margin: 0;
-    padding: 10px; /* Ajusta el área clickeable */
-    transition: transform 0.4s ease-in-out; /* Suaviza la animación */
-    transform-origin: left; /* Hace que la animación de escala crezca desde la izquierda */
+    padding: 10px;
+    /* Ajusta el área clickeable */
+    transition: transform 0.4s ease-in-out;
+    /* Suaviza la animación */
+    transform-origin: left;
+    /* Hace que la animación de escala crezca desde la izquierda */
 }
 
 /* Efecto al pasar el cursor */
 #logo:hover h1 {
-    transform: scaleX(1.1); /* Expande solo en el eje X (hacia la derecha) */
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Aumenta el difuminado */
+    transform: scaleX(1.1);
+    /* Expande solo en el eje X (hacia la derecha) */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    /* Aumenta el difuminado */
 }
+
+
+
 
 /* Estilo para la lista de navegación */
 ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    display: flex; /* Usa Flexbox para alinear los links horizontalmente */
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    display: flex;
+    /* Usa Flexbox para alinear los links horizontalmente */
 }
 
 ul li {
-    margin-left: 20px; /* Espacio entre cada link */
+    margin-left: 20px;
+    /* Espacio entre cada link */
 }
 
 ul li a {
-    color: white; /* Color de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white;
+    /* Color de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
     font-size: 16px;
 }
 
 ul li a:hover {
-    color: #ff6347; /* Cambia el color del enlace al pasar el mouse */
+    color: #ff6347;
+    /* Cambia el color del enlace al pasar el mouse */
 }
+
 /* */
+
+
+
+
+/* Estilo para el pie de página */
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* Alinea el texto a la izquierda y los enlaces a la derecha */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: #333;
+    /* Color de fondo del pie de página */
+    color: white;
+    /* Color del texto */
+    font-size: 14px;
+    /* Tamaño de fuente */
+}
+
+/* Estilo para el texto de derechos de autor */
+footer p {
+    margin: 0;
+}
+
+/* Estilo para la lista de enlaces */
+footer ul {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    display: flex;
+    /* Usa Flexbox para alinear los enlaces horizontalmente */
+}
+
+footer ul li {
+    margin-left: 15px;
+    /* Espacio entre los enlaces */
+}
+
+footer ul li a {
+    color: white;
+    /* Color de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #ff6347;
+    /* Cambia el color del enlace al pasar el mouse */
+}
+
+
+
+
+
+
 
 .contenido {
     color: #fff;
@@ -78,6 +167,22 @@ ul li a:hover {
     text-align: center;
 }
 
+.titulo_h1:hover {
+    transform: scaleX(1.1);
+    /* Expande solo en el eje X (hacia la derecha) */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    /* Aumenta el difuminado */
+    transition: transform 0.5s ease-in-out;
+    text-shadow: 0px 5px 15px rgba(87, 87, 87, 0.849);
+}
+.titulo_h1 {
+transition: transform 0.4s ease-in-out;
+padding: 30px 0px;
+letter-spacing: 1px;
+margin: 0px 100px;
+height: 70px;
+}
+
 .description {
     font-size: 1.2rem;
     font-weight: 300;
@@ -88,56 +193,14 @@ ul li a:hover {
 
 
 
-
-
-
-
-
-
-/* Estilo para el pie de página */
-footer {
-    display: flex;
-    justify-content: space-between; /* Alinea el texto a la izquierda y los enlaces a la derecha */
-    align-items: center; /* Alinea verticalmente los elementos */
-    padding: 20px; /* Espaciado interno */
-    background-color: #333; /* Color de fondo del pie de página */
-    color: white; /* Color del texto */
-    font-size: 14px; /* Tamaño de fuente */
-}
-
-/* Estilo para el texto de derechos de autor */
-footer p {
-    margin: 0;
-}
-
-/* Estilo para la lista de enlaces */
-footer ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    display: flex; /* Usa Flexbox para alinear los enlaces horizontalmente */
-}
-
-footer ul li {
-    margin-left: 15px; /* Espacio entre los enlaces */
-}
-
-footer ul li a {
-    color: white; /* Color de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 14px;
-}
-
-footer ul li a:hover {
-    color: #ff6347; /* Cambia el color del enlace al pasar el mouse */
-}
-
-
 /* Estilo para el artículo */
 article {
     min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a; /* Fondo negro con un toque distinto al footer y nav */
+    background-color: #1a1a1a;
+    /* Fondo negro con un toque distinto al footer y nav */
 }
 
 /* Contenedor principal */
@@ -145,8 +208,10 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Ancho de la sección */
-    max-width: 1200px; /* Ancho máximo */
+    width: 80%;
+    /* Ancho de la sección */
+    max-width: 1200px;
+    /* Ancho máximo */
 }
 
 /* Imagen a la izquierda */
@@ -154,10 +219,21 @@ article {
     width: 400px;
     height: 600px;
     object-fit: cover;
-    border-radius: 15px; /* Bordes redondeados suaves */
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra en la parte inferior y derecha */
+    border-radius: 15px;
+    /* Bordes redondeados suaves */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    /* Sombra en la parte inferior y derecha */
     animation: spin-horizontal 1s ease-out 0.3s forwards;
     transform-style: preserve-3d;
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease;
+
+}
+.hero__photo__1:hover {
+    /* Bordes redondeados suaves */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease;
+
 }
 
 /* Animación de giro horizontal */
@@ -166,6 +242,7 @@ article {
         transform: rotateY(0deg) scale(0.8);
         opacity: 0;
     }
+
     to {
         transform: rotateY(360deg) scale(1);
         opacity: 1;
@@ -192,14 +269,15 @@ article {
 
 
 
-.container__proyectos{
+.container__proyectos {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
-.proyectos{
+
+.proyectos {
     min-height: 200px;
     min-width: 300px;
     padding: 15px;
@@ -208,6 +286,7 @@ article {
     border-top-right-radius: 20% 30%;
 
 }
-#proyecto__papel{
-    color:gray;
+
+#proyecto__papel {
+    color: gray;
 }
